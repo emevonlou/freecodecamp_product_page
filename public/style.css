@@ -1,0 +1,96 @@
+body {
+    background-color: #FFF8DC;
+}
+
+p {
+    padding: 10px 0;
+}
+
+#header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#FFF8DC;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 50px;
+}
+
+#header-img {
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    width: 60px;
+    height: 60px;
+}
+
+#about, #services, #contact {
+    height: 60px;
+}
+
+#video-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#video {
+    width: 98%;
+    border: 5px solid #bbb;
+}
+
+#form {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#email, #submit {
+    border: none;
+}
+
+.srv, .srvimg {
+    width: calc(100% - 8px);
+    margin: 3px;
+}
+
+.srv {
+    margin: 3px 3px 50px 3px;
+}
+
+.srvimg, .price {
+    background-color: transparent;
+}
+
+.price {
+    margin: 0 3px 3px 3px;
+}
+
+@media screen and (min-width: 500px) {
+    #services-container {
+        display: flex;
+        justify-content: center;
+    }
+    #services-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .srv {
+        width: 250px;
+        height: 285px;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    #video {
+        width: 560px;
+        height: 315px;
+    }
+}
